@@ -1,0 +1,201 @@
+/* Container */
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header__title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Блок card */
+
+.card__body {
+    padding: 20px 0px;
+    transition: background-color 0.3s;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 10px;
+}
+
+.card__body::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.card__container {
+    margin-bottom: 20px;
+}
+
+.card__body_border_none {
+    border: none
+}
+
+.card__body_hover-bg_blue:hover {
+    background-color: aliceblue;
+}
+
+.card__body_hover-bg_pink:hover {
+    background-color: rgb(255, 243, 246);
+}
+
+.card__body_hover-bg_yellow:hover {
+    background-color: rgb(255, 255, 220);
+}
+
+.card__body_hover-bg_red:hover {
+    background-color: rgb(253, 233, 226);
+}
+
+/* Инфо */
+
+.card__image {
+    display: block;
+    float: left;
+    width: 250px;
+    height: 335px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+
+.info-item__label {
+    font-style: italic;
+    color: rgb(158, 158, 158);
+}
+
+.info-item__data {
+    font-weight: bold;
+}
+
+/* Заглавие блока */
+
+.head {
+    text-align: center;
+}
+
+.head__title {
+    margin: 0;
+    padding: 5px 0 15px;
+}
+
+/* Цели */
+
+.card__purposes {
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+.card__purpose {
+    padding: 10px;
+}
+
+/* Расписание */
+
+.card__schedule {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.card__row {
+    margin: 10px;
+}
+
+.card__time {
+    padding: 10px;
+    text-align: right;
+}
+
+/* Курсы */
+
+.card__courses-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.card__courses-table-head {
+    border-bottom: 2px solid black;
+}
+
+.card__courses-table-row {
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.courses__name {
+    padding: 15px;
+}
+
+.courses__name,
+.courses__author,
+.courses__rank {
+    text-align: center;
+}
+
+/* Контакты */
+
+.card__links {
+    display: flex;
+    justify-content: center;
+}
+
+.card__link {
+    display: inline-block;
+    color: black;
+    width: 15%;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card__link:hover {
+    text-decoration: underline;
+}
+
+/* Адаптив */
+
+@media (max-width: 900px) {
+    .container {
+        width: 100%;
+    }
+
+    .card__body:hover {
+        background-color: transparent;
+    }
+
+
+    .card__image {
+        margin: 0px auto;
+        float: none;
+    }
+
+    .card__text {
+        text-align: center;
+    }
+
+    .card__schedule {
+        width: 70%;
+    }
+
+    .card__courses-table {
+        width: 90%;
+    }
+
+    .card__links {
+        flex-direction: column;
+    }
+
+    .card__link {
+        width: 100%;
+        padding: 0px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .card__link:last-child {
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Пушкин А.А.</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Карточка студента</h1>
+    </header>
+    <section class="card">
+        <div class="container card__container">
+            <div class="card__body card__body_border_none">
+                <img class="card__image" src="assets/avatar.jpg" alt="Моя Фотография">
+                <div class="card__text">
+                    <div class="card__info-item info-item">
+                        <p class="info-item__label">Имя, Фамилия:</p>
+                        <p class="info-item__data">Александр Пушкин</p>
+                    </div>
+                    <div class="card__info-item info-item">
+                        <p class="info-item__label">Возраст:</p>
+                        <p class="info-item__data">33 года</p>
+                    </div>
+                    <div class="card__info-item info-item">
+                        <p class="info-item__label">Опыт в программировании:</p>
+                        <p class="info-item__data">2 года</p>
+                    </div>
+                    <div class="card__info-item info-item">
+                        <p class="info-item__label">О себе:</p>
+                        <p class="info-item__data">Учу программирование чуть менее 2-х лет. Родственником известного
+                            русского поэта не являюсь. Люблю музыку</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="card">
+        <div class="container card__container">
+            <div class="card__body card__body_hover-bg_blue">
+                <div class="head">
+                    <h2 class="head__title">Мои цели на обучение</h2>
+                </div>
+                <ul class="card__purposes">
+                    <li class="card__purpose">Отточить навыки HTML, CSS</li>
+                    <li class="card__purpose">Углубить знание JS</li>
+                    <li class="card__purpose">Освоить React-разработку</li>
+                    <li class="card__purpose">Научиться правильно организовывать структуру веб-приложений</li>
+                    <li class="card__purpose">Понимать работу приложений на уровне Fullstack</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="card">
+        <div class="container card__container">
+            <div class="card__body card__body_hover-bg_pink">
+                <div class="head">
+                    <h2 class="head__title">Сколько времени смогу учиться</h2>
+                </div>
+                <table class="card__schedule">
+                    <tr class="card__row">
+                        <td class="card__day">Понедельник</td>
+                        <td class="card__time">4ч.</td>
+                    </tr>
+                    <tr class="card__row">
+                        <td class="card__day">Вторник</td>
+                        <td class="card__time">2-3ч.</td>
+                    </tr>
+                    <tr class="card__row">
+                        <td class="card__day">Cреда</td>
+                        <td class="card__time">3-6ч.</td>
+                    </tr>
+                    <tr class="card__row">
+                        <td class="card__day">Четверг</td>
+                        <td class="card__time">2-5ч.</td>
+                    </tr>
+                    <tr class="card__row">
+                        <td class="card__day">Пятница</td>
+                        <td class="card__time">5ч.</td>
+                    </tr>
+                    <tr class="card__row">
+                        <td class="card__day">Суббота</td>
+                        <td class="card__time">8ч.</td>
+                    </tr>
+                    <tr class="card__row">
+                        <td class="card__day">Воскресенье</td>
+                        <td class="card__time">2-3ч.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="card">
+        <div class="container card__container">
+            <div class="card__body card__body_hover-bg_yellow">
+                <div class="head">
+                    <h2 class="head__title">Мои пройденные курсы</h2>
+                </div>
+                <table class="card__courses-table">
+                    <thead class="card__courses-table-head">
+                        <tr class="card__courses-table-row">
+                            <th class="courses__name">Название</th>
+                            <th class="courses__author">Автор</th>
+                            <th class="courses__rank">Оценка курса</th>
+                        </tr>
+                    </thead>
+                    <tbody class="card__courses-table-body">
+                        <tr class="card__courses-table-row">
+                            <td class="courses__name">Java</td>
+                            <td class="courses__author">JavaRush</td>
+                            <td class="courses__rank">6/10</td>
+                        </tr>
+                        <tr class="card__courses-table-row">
+                            <td class="courses__name">HTML, CSS, JavaScript</td>
+                            <td class="courses__author">HTMLAcademy</td>
+                            <td class="courses__rank">8/10</td>
+                        </tr>
+                        <tr class="card__courses-table-row">
+                            <td class="courses__name">React JS - путь самурая 1.0, 2.0</td>
+                            <td class="courses__author">Дмитрий Кузюбердин</td>
+                            <td class="courses__rank">10/10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="card">
+        <div class="container card__container">
+            <div class="card__body card__body_hover-bg_red">
+                <div class="head">
+                    <h2 class="head__title">Контакты</h2>
+                </div>
+                <div class="card__links">
+                    <a class="card__link" href="https://vk.com/apushka" target="_blank">Вконтакте</a>
+                    <a class="card__link" href="https://instagram.com/pushkin_music" target="_blank">Instagram</a>
+                    <a class="card__link" href="https://t.me/SPARDJA" target="_blank">Telegram</a>
+                    <a class="card__link" href="https://github.com/Apushka" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
